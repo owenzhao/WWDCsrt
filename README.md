@@ -1,5 +1,5 @@
   ![icon](./WWDCSubGetter/Assets.xcassets/AppIcon.appiconset/Icon_256x256.png)
-
+  
 <p align="center">
     <a href="https://github.com/ssamadgh/WWDCsrt/releases" target="_blank">
 	    <img src="https://img.shields.io/badge/Version-1.6.2-brightgreen.svg?style=flat" alt="app version 1.6.2">
@@ -20,6 +20,11 @@
 </p>
 
 </p>
+
+# 相对于原版的改进
+1. 原版下载的是英文字幕，此版本下载的是中文字幕。
+2. 将网络检测使用的google.com改为了更符合中文环境的apple.com。
+3. 新增了编译好的版本，此版本通过了苹果的初步审核（notarized），可以直接在新版系统中双击打开。原版的未经过审核，需要点两次右键才能打开。（需要的直接点开代码中的[Release文件夹](https://github.com/owenzhao/WWDCsrt/tree/master/Releases)下载即可。）
 
 # WWDC.srt
 #### An app for Download WWDC subtitles
