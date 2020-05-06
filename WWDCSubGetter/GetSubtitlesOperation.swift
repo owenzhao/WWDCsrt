@@ -33,7 +33,7 @@ final class GetSubtitlesOperation: GroupOperation {
          */
 
         let fetchSubtitlesOperation = FetchSubtitilesOperation()
-        let sampleURL = URL(string: "https://www.google.com")!
+        let sampleURL = URL(string: "https://www.apple.com")!
         let reachabilityCondition = ReachabilityCondition(host: sampleURL)
         fetchSubtitlesOperation.addCondition(reachabilityCondition)
 

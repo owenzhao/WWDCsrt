@@ -135,7 +135,7 @@ struct Subtitle: Comparable {
 	
 	/// This method gives url for download webvtt file related to given webvtt.
 	func url(for webvtt: Webvtt) -> URL {
-		let webvttFileURL = self.videoURLPrefix + "subtitles/eng/" + webvtt.name
+        let webvttFileURL = self.videoURLPrefix + "subtitles/zho/" + webvtt.name
 		return URL(string: webvttFileURL)!
 	}
 	

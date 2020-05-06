@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCFAACA92462A76E007C28FF /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFAACA82462A76E007C28FF /* NetworkExtension.framework */; };
 		E410760F1F91292400A4D4AB /* TextFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E410760E1F91292400A4D4AB /* TextFileView.swift */; };
 		E4173DC121FC00A400715013 /* GetSessionsListOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4173DC021FC00A400715013 /* GetSessionsListOperation.swift */; };
 		E4173DC321FC016900715013 /* ParseSessionsListOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4173DC221FC016900715013 /* ParseSessionsListOperation.swift */; };
@@ -70,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DCFAACA62462A76E007C28FF /* WWDC.srt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WWDC.srt.entitlements; sourceTree = "<group>"; };
+		DCFAACA82462A76E007C28FF /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		E410760E1F91292400A4D4AB /* TextFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileView.swift; sourceTree = "<group>"; };
 		E4173DC021FC00A400715013 /* GetSessionsListOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSessionsListOperation.swift; sourceTree = "<group>"; };
 		E4173DC221FC016900715013 /* ParseSessionsListOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseSessionsListOperation.swift; sourceTree = "<group>"; };
@@ -140,12 +143,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCFAACA92462A76E007C28FF /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCFAACA72462A76E007C28FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCFAACA82462A76E007C28FF /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E4173DC421FC0CBB00715013 /* GetSessionsListOperation */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,9 +325,11 @@
 		E4F327BB1F406EA80018B524 = {
 			isa = PBXGroup;
 			children = (
+				DCFAACA62462A76E007C28FF /* WWDC.srt.entitlements */,
 				E4F327C61F406EA80018B524 /* WWDCSubGetter */,
 				E4CDBE57220BF3F800CE6A9C /* WWDC.srtTests */,
 				E4F327C51F406EA80018B524 /* Products */,
+				DCFAACA72462A76E007C28FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -402,13 +416,13 @@
 				TargetAttributes = {
 					E4CDBE55220BF3F800CE6A9C = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 2T492Q3SC8;
+						DevelopmentTeam = 96NM39SGJ5;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E4F327C31F406EA80018B524;
 					};
 					E4F327C31F406EA80018B524 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 2T492Q3SC8;
+						DevelopmentTeam = 96NM39SGJ5;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -547,7 +561,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2T492Q3SC8;
+				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = WWDC.srtTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -571,7 +585,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2T492Q3SC8;
+				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = WWDC.srtTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -698,10 +712,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WWDC.srt.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2T492Q3SC8;
+				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				INFOPLIST_FILE = WWDCSubGetter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -717,10 +732,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WWDC.srt.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2T492Q3SC8;
+				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				INFOPLIST_FILE = WWDCSubGetter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
